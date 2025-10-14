@@ -5,16 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meine Landingpage</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
   <header class="text-center py-10">
     <h1 class="text-5xl font-bold text-blue-600">Willkommen auf meiner Landingpage!</h1>
     <p class="text-lg mt-4">Modern, schnell und auf GitHub gehostet 🚀</p>
   </header>
-  <section class="max-w-3xl mx-auto text-center p-6">
+  <section class="max-w-3xl mx-auto text-center p-6" data-aos="fade-up">
     <button class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
       Mehr erfahren
     </button>
   </section>
+  
+  <script>
+  AOS.init({
+    duration: 1000, // Dauer der Animation in ms
+    once: true,     // Animation nur einmal beim Scrollen
+  });
+</script>
+
 </body>
 </html>
