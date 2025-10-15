@@ -3,29 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meine Landingpage</title>
+  <title>Philip Stipkovits - Tech Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="text-center py-10">
-    <h1 class="text-5xl font-bold text-blue-600" data-aos="zoom in">Willkommen auf meiner Portfolio-Landingpage!</h1>
-    <p class="text-lg mt-4">Aktuell ist die Seite in Wartung / Development</p>
-    <p class="text-lg mt-4" data-aos="fade-right">Developed & mainted by Philip Stipkovits himself</p>
-  </header>
-  <section class="max-w-3xl mx-auto text-center p-6">
-    <button class="bg-blue-600 text-white px-6 py-3 rounded-xl hover:bg-blue-700 transition">
-      Coming Soon.. :)
-    </button>
-  </section>
-  
-  <script>
-  AOS.init({
-    duration: 1000, // Dauer der Animation in ms
-    once: true,     // Animation nur einmal beim Scrollen
-  });
-</script>
 
+  <!-- HEADER -->
+  <header class="text-center py-20 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+    <h1 class="text-5xl font-bold mb-4" data-aos="fade-down">Philip Stipkovits</h1>
+    <p class="text-xl mb-6" data-aos="fade-up" data-aos-delay="200">Web & Cloud Developer | Azure Certified</p>
+    <a href="#portfolio" class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition" data-aos="zoom-in" data-aos-delay="400">Meine Projekte ansehen</a>
+  </header>
+
+  <!-- ÜBER MICH -->
+  <section class="max-w-4xl mx-auto text-center py-20 px-6">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-right">Über mich</h2>
+    <p class="text-lg text-gray-700 mb-4" data-aos="fade-left" data-aos-delay="200">
+      Ich bin Philip, leidenschaftlicher Entwickler im Web- und Cloud-Bereich. Ich baue moderne Weblösungen und optimiere Cloud-Infrastrukturen mit Microsoft Azure.
+    </p>
+    <p class="text-lg text-gray-700" data-aos="fade-left" data-aos-delay="400">
+      Aktuell arbeite ich an spannenden Projekten und erweitere stetig meine Azure-Kenntnisse.
+    </p>
+  </section>
+
+  <!-- AZURE ZERTIFIKATE -->
+  <section class="bg-gray-100 py-20">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Meine Azure-Zertifikate</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <!-- Zertifikat 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="flip-left">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Microsoft_Azure_Logo.svg" alt="Azure Fundamentals" class="h-16 mx-auto mb-4">
+          <h3 class="font-semibold text-xl mb-2">Azure Fundamentals</h3>
+          <p class="text-gray-600">Zertifiziert in Microsoft Azure Grundlagen.</p>
+        </div>
+        <!-- Zertifikat 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="flip-left" data-aos-delay="200">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Microsoft_Azure_Logo.svg" alt="Azure Developer" class="h-16 mx-auto mb-4">
+          <h3 class="font-semibold text-xl mb-2">Azure Developer Associate</h3>
+          <p class="text-gray-600">Entwicklung und Verwaltung von Azure-Cloud-Lösungen.</p>
+        </div>
+        <!-- Zertifikat 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-lg" data-aos="flip-left" data-aos-delay="400">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Microsoft_Azure_Logo.svg" alt="Azure Administrator" class="h-16 mx-auto mb-4">
+          <h3 class="font-semibold text-xl mb-2">Azure Administrator</h3>
+          <p class="text-gray-600">Verwaltung und Überwachung von Azure-Ressourcen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="max-w-5xl mx-auto text-center py-20 px-6">
+    <h2 class="text-3xl font-bold mb-12" data-aos="fade-up">Meine Projekte</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-up">
+        <h3 class="font-semibold text-xl mb-2">Projekt 1</h3>
+        <p class="text-gray-600">Beschreibung des Projekts 1.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-semibold text-xl mb-2">Projekt 2</h3>
+        <p class="text-gray-600">Beschreibung des Projekts 2.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="font-semibold text-xl mb-2">Projekt 3</h3>
+        <p class="text-gray-600">Beschreibung des Projekts 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="bg-blue-600 text-white py-20 text-center">
+    <h2 class="text-3xl font-bold mb-6" data-aos="fade-down">Kontakt</h2>
+    <p class="mb-6" data-aos="fade-up">Du möchtest mit mir zusammenarbeiten? Schreib mir eine Nachricht!</p>
+    <a href="mailto:philip@example.com" class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition" data-aos="zoom-in">E-Mail schreiben</a>
+  </section>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
